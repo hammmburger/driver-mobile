@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context=".MyRequests">
+
+    <!--    Toolbar    -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingEnd="14dp"
+        android:paddingTop="14dp"
+        android:background="#ffff">
+
+        <!-- Слева -->
+        <ImageView
+            android:id="@+id/toolbarIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_details"
+            android:contentDescription="Icon Description"/>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:text="Детали заявки"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Справа -->
+        <ImageButton
+            android:id="@+id/toolbarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:src="@drawable/icon_menu"
+            android:contentDescription="Button Description"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--    Updates Info    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/route_instance_dest"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="22dp"
+            android:paddingStart="55dp"
+            android:text="Destination"
+            />
+
+        <ImageView
+            android:id="@+id/open_request"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_dest"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+    </RelativeLayout>
+
+    <!--    Passengers Info    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/passengers_black"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingStart="55dp"
+            android:text="Посадка пассажиров"
+            />
+        <TextView
+            android:id="@+id/AllNewPassengers"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="62dp"
+            android:paddingStart="55dp"
+            android:text="1."
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/passengers_black"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingStart="55dp"
+            android:text="Высадка пассажиров"
+            />
+        <TextView
+            android:id="@+id/AllDelPassengers"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="62dp"
+            android:paddingStart="55dp"
+            android:text="1."
+            />
+    </RelativeLayout>
+    <!--    Passengers Info    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cargo_black"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingStart="55dp"
+            android:text="Загрузка"
+            />
+        <TextView
+            android:id="@+id/AllNewCargos"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="62dp"
+            android:paddingStart="55dp"
+            android:text="1."
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cargo_black"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingStart="55dp"
+            android:text="Выгрузка"
+            />
+        <TextView
+            android:id="@+id/AllDelCargos"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="62dp"
+            android:paddingStart="55dp"
+            android:text="1."
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+

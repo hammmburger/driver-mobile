@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/route_dest"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="12dp"
+            android:paddingStart="55dp"
+            android:text="Destination"
+            />
+        <TextView
+            android:id="@+id/route_timedate"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="12dp"
+            android:textColor="#348BED"
+            android:paddingStart="55dp"
+            android:text="00:00   Январь 01 2000"
+            />
+
+        <!--    Правые    -->
+
+        <!--    Пассажиры и грузы    -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="190dp"
+            android:text="PAS PAS PAS CARG CARG CARG"
+            >
+
+            <TextView
+                android:id="@+id/passengersNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/passengers_green"
+                android:paddingRight="10dp"
+                android:textColor="#1AAB17"/>
+            <TextView
+                android:id="@+id/passengersDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/passengers_red"
+                android:textColor="#AB1717"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/passengersNew"/>
+            <TextView
+                android:id="@+id/passengersTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/passengers_black"
+                android:textColor="#282828"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/passengersDel"/>
+
+            <TextView
+                android:id="@+id/cargoNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/crago_green"
+                android:textColor="#1AAB17"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/passengersTotal"/>
+            <TextView
+                android:id="@+id/cargoDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/cargo_red"
+                android:textColor="#AB1717"
+                android:paddingRight="10dp"
+                android:layout_toRightOf="@+id/cargoNew"/>
+            <TextView
+                android:id="@+id/cargoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:drawablePadding="0dp"
+                android:textSize="11dp"
+                android:drawableLeft="@drawable/cargo_black"
+                android:textColor="#282828"
+                android:layout_toRightOf="@+id/cargoDel"/>
+
+
+
+        </RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/request_date"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textColor="#348BED"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:paddingStart="210dp"-->
+<!--            android:text="PAS PAS PAS CARG CARG CARG"-->
+<!--            />-->
+
+        <ImageView
+            android:id="@+id/open_request"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_dest"
+            app:backgroundTint="#ffff"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context=".MyRequests">
+
+    <!--    Toolbar    -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingEnd="14dp"
+        android:paddingTop="14dp"
+        android:background="#ffff">
+
+        <!-- Слева -->
+        <ImageView
+            android:id="@+id/toolbarIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_pointer"
+            android:contentDescription="Icon Description"/>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:text="Все заявки"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Справа -->
+        <ImageButton
+            android:id="@+id/toolbarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:src="@drawable/icon_menu"
+            android:contentDescription="Button Description"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--    Active Request    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="Текущая перевозка"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            />
+
+        <Button
+            android:id="@+id/open_active"
+            android:background="@drawable/layout_round"
+            app:backgroundTint="#EAEAEA"
+            android:textColor="#393939"
+            android:text="Начните поездку по одной из заявок"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="13dp"
+            />
+
+    </LinearLayout>
+
+
+    <!--    Content    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="Мои Заявки на поездку"
+        android:layout_marginStart="7dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="20dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_round"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        >
+
+        <ListView
+            android:id="@+id/requestsList"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/list_request"
+            android:divider="#DBDBDB"
+            android:dividerHeight="1sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

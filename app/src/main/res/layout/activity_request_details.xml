@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context=".MyRequests">
+
+    <!--    Toolbar    -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingEnd="14dp"
+        android:paddingTop="14dp"
+        android:background="#ffff">
+
+        <!-- Слева -->
+        <ImageView
+            android:id="@+id/toolbarIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_details"
+            android:contentDescription="Icon Description"/>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:text="Детали заявки"
+            android:textColor="#282828"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Справа -->
+        <ImageButton
+            android:id="@+id/toolbarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:src="@drawable/icon_menu"
+            android:contentDescription="Button Description"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--    Head Info    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="Поездка по маршруту ---"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="28dp"
+            />
+
+        <!--    Start of Request Info Blocks    -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!-- Первый RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/layout_round"
+                android:orientation="horizontal"
+                android:backgroundTint="#F5F5F5">
+
+                <TextView
+                    android:id="@+id/transportType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transport Type"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="7dp"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/icon_truck"
+                    android:textColor="#282828"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_round"
+                android:orientation="horizontal"
+                android:backgroundTint="#F5F5F5">
+
+                <TextView
+                    android:id="@+id/startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="7dp"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/icon_clock"
+                    android:textColor="#348BED"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/layout_round"
+                android:orientation="horizontal"
+                android:backgroundTint="#F5F5F5">
+
+                <TextView
+                    android:id="@+id/transportNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxxxx"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="7dp"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/icon_truck"
+                    android:textColor="#282828"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_round"
+                android:orientation="horizontal"
+                android:backgroundTint="#F5F5F5">
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--- 01 2000"
+                    android:drawablePadding="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="7dp"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/icon_clock"
+                    android:textColor="#348BED"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--    End of Request Info Blocks    -->
+
+    </LinearLayout>
+
+    <!--    Route Details    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="Детали маршрута"
+        android:layout_marginStart="7dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_round"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/routesList"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            tools:listitem="@layout/list_route"
+            android:divider="#DBDBDB"
+            android:dividerHeight="1sp"
+            android:focusable="false"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            />
+
+        <Button
+            android:id="@+id/startRequestButton"
+            android:background="@drawable/button_round"
+            app:backgroundTint="#348BED"
+            android:textColor="#ffff"
+            android:text="Начать поездку"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

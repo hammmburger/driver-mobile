@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sgk_logo"
+            />
+        <TextView
+            android:text="СГК Транспорт"
+            android:textColor="#0078A8"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <TextView
+            android:text="Приложение водителя"
+            android:textColor="#0078A8"
+            android:textSize="23sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/top_corners_round"
+        android:elevation="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="В х о д"
+            android:textColor="#ffff"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textColorHint="#CDCDCD"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/icon_hash"
+            android:drawablePadding="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/username"
+            android:hint="Логин"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textColorHint="#CDCDCD"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:id="@+id/password"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="150dp"
+            android:text="Запомнить"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#CFCFCF"
+            />
+
+        <Button
+            android:id="@+id/login_button"
+            android:background="@drawable/button_round"
+            app:backgroundTint="#ffff"
+            android:textColor="#3683A1"
+            android:text="В О Й Т И"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:text="Не помните пароль? Обратитесь к сотруднику административно-хозяйственного отдела"
+            android:textColor="#ABC8D4"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

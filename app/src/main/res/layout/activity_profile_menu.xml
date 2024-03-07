@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    tools:context=".MyRequests"
+    android:paddingVertical="21dp"
+    android:paddingHorizontal="30dp">
+
+    <!--    Profile    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Руслан Тогузов"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:paddingTop="7dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/icon_profile"
+        android:textColor="#282828"
+        android:layout_marginBottom="30dp"/>
+
+    <!--    Action Buttons    -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_marginBottom="45dp">
+
+    <!-- Первый RelativeLayout -->
+    <RelativeLayout
+        android:id="@+id/openRequests"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="45dp"
+        android:paddingTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/layout_round"
+        android:orientation="horizontal"
+        android:backgroundTint="#EDECEC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мои заявки"
+            android:drawablePadding="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/icon_pointer"
+            android:textColor="#282828"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/openActive"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="45dp"
+        android:paddingTop="4dp"
+        android:background="@drawable/layout_round"
+        android:orientation="horizontal"
+        android:backgroundTint="#EDECEC">
+
+        <TextView
+            android:id="@+id/activeRequestsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Активно"
+            android:drawablePadding="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/icon_truck"
+            android:textColor="#BFBFBF"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--    MENU    -->
+    <RelativeLayout
+        android:id="@+id/openRequests2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Мои заявки на поездку"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#DBDBDB"
+        android:layout_alignParentBottom="true"/>
+    <!--    -->
+    <RelativeLayout
+        android:id="@+id/openFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Путевые листы"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#DBDBDB"
+        android:layout_alignParentBottom="true"/>
+    <!--    -->
+    <RelativeLayout
+        android:id="@+id/openHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="История поездок"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#DBDBDB"
+        android:layout_alignParentBottom="true"/>
+    <!--    -->
+    <RelativeLayout
+        android:id="@+id/openCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="График работы"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#DBDBDB"
+        android:layout_alignParentBottom="true"/>
+    <!--    -->
+    <RelativeLayout
+        android:id="@+id/openCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Связь с сотрудником АХО"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="1dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            />
+    </RelativeLayout>
+    <View
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="#DBDBDB"
+        android:layout_alignParentBottom="true"/>
+    <!--    -->
+    <RelativeLayout
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Выйти"
+            android:textColor="#FF5C00"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

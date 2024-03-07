@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/request_from"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="5dp"
+            android:text="from"
+            />
+        <TextView
+            android:id="@+id/request_to"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="5dp"
+            android:text="to"
+            />
+
+        <!--    Правые    -->
+
+        <TextView
+            android:id="@+id/request_isComplex"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="5dp"
+            android:paddingEnd="40dp"
+            android:text="is_complex"
+            />
+
+        <TextView
+            android:id="@+id/request_date"
+            android:textSize="12sp"
+            android:textColor="#348BED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="5dp"
+            android:paddingEnd="40dp"
+            android:text="date"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/open_arrow"
+            app:backgroundTint="#ffff"
+        />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
