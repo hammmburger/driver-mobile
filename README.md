@@ -4,7 +4,7 @@
 
 > Является демонстрационной версией 
 
-<div><img src="https://i.imgur.com/93UBc1v.png" style="padding-right: 8px; float: left;" width="250">
+<div><img src="https://i.imgur.com/93UBc1v.png" align="left" style="padding-right: 8px;" width="250">
 
 #### О приложении
 Данное приложение предоставляет водителю перевозки интерфейс для управления заявками, созданными через [Веб-Приложение логистической системы](https://github.com/Buterbrod-iku/sgk). 
